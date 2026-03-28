@@ -3,177 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RappelSMS - █̵̛̼I̶͖͝N̷͍͠T̶͙̚E̵̟͠R̵͍͠F̷͍͠A̵̟͠C̵̟͠E̵̟͠ ̵͍͠C̵̟͠O̵͍͠R̵͍͠R̵͍͠O̵͍͠M̵͍͠P̵͍͠U̵͍͠E̵̟͠█̵̛̼</title>
+    <title>RappelSMS - Brutal</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
+            background-color: #fdf5e6; /* Blanc cassé façon papier brut */
+            color: #000;
             font-family: 'Space Mono', monospace;
-            background-color: #050505;
-            color: #fff;
-            overflow: hidden;
-            animation: bg-trip 10s infinite alternate;
-        }
-
-        /* DÉLIRE PSYCHÉDÉLIQUE EN FOND */
-        @keyframes bg-trip {
-            0% { filter: hue-rotate(0deg) contrast(100%); }
-            25% { filter: hue-rotate(90deg) contrast(150%) saturate(200%); }
-            50% { filter: hue-rotate(180deg) invert(10%); }
-            75% { filter: hue-rotate(270deg) contrast(200%) saturate(300%); }
-            100% { filter: hue-rotate(360deg) contrast(100%); }
-        }
-
-        /* LE GLITCH ART ULTIME */
-        .glitch {
-            position: relative;
-            display: inline-block;
         }
         
-        .glitch::before, .glitch::after {
-            content: attr(data-text);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #050505;
+        /* Typo massive pour les titres */
+        h1, h2, .font-black {
+            font-family: 'Archivo Black', sans-serif;
+            text-transform: uppercase;
         }
 
-        .glitch::before {
-            left: 4px;
-            text-shadow: -2px 0 #ff00c1;
-            clip: rect(44px, 450px, 56px, 0);
-            animation: glitch-anim 5s infinite linear alternate-reverse;
+        /* L'ADN du Néo-brutalisme */
+        .brutal-border {
+            border: 4px solid #000;
+        }
+        
+        .brutal-shadow {
+            box-shadow: 8px 8px 0px 0px #000;
+            transition: all 0.1s ease-in-out;
+        }
+        
+        .brutal-shadow:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 10px 10px 0px 0px #000;
+        }
+        
+        /* L'effet "bouton physique" ultra satisfaisant */
+        .brutal-shadow:active {
+            transform: translate(8px, 8px);
+            box-shadow: 0px 0px 0px 0px #000;
         }
 
-        .glitch::after {
-            left: -4px;
-            text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
-            clip: rect(44px, 450px, 56px, 0);
-            animation: glitch-anim2 5s infinite linear alternate-reverse;
-        }
-
-        @keyframes glitch-anim {
-            0% { clip: rect(10px, 9999px, 83px, 0); transform: skew(0.8deg); }
-            5% { clip: rect(98px, 9999px, 56px, 0); transform: skew(0.1deg); }
-            10% { clip: rect(13px, 9999px, 20px, 0); transform: skew(0.8deg); }
-            15% { clip: rect(65px, 9999px, 81px, 0); transform: skew(0.2deg); }
-            20% { clip: rect(51px, 9999px, 15px, 0); transform: skew(0.3deg); }
-            25% { clip: rect(81px, 9999px, 34px, 0); transform: skew(0.5deg); }
-            30% { clip: rect(31px, 9999px, 96px, 0); transform: skew(0.1deg); }
-            35% { clip: rect(45px, 9999px, 24px, 0); transform: skew(0.8deg); }
-            40% { clip: rect(12px, 9999px, 86px, 0); transform: skew(0.5deg); }
-            45% { clip: rect(78px, 9999px, 63px, 0); transform: skew(0.2deg); }
-            50% { clip: rect(24px, 9999px, 14px, 0); transform: skew(0.7deg); }
-            100% { clip: rect(43px, 9999px, 92px, 0); transform: skew(0.4deg); }
-        }
-
-        @keyframes glitch-anim2 {
-            0% { clip: rect(65px, 9999px, 100px, 0); transform: skew(0.1deg); }
-            5% { clip: rect(52px, 9999px, 74px, 0); transform: skew(0.5deg); }
-            10% { clip: rect(79px, 9999px, 85px, 0); transform: skew(0.3deg); }
-            15% { clip: rect(15px, 9999px, 32px, 0); transform: skew(0.8deg); }
-            20% { clip: rect(94px, 9999px, 45px, 0); transform: skew(0.2deg); }
-            25% { clip: rect(23px, 9999px, 18px, 0); transform: skew(0.6deg); }
-            30% { clip: rect(42px, 9999px, 91px, 0); transform: skew(0.4deg); }
-            35% { clip: rect(87px, 9999px, 53px, 0); transform: skew(0.9deg); }
-            40% { clip: rect(11px, 9999px, 64px, 0); transform: skew(0.1deg); }
-            45% { clip: rect(35px, 9999px, 88px, 0); transform: skew(0.7deg); }
-            50% { clip: rect(56px, 9999px, 29px, 0); transform: skew(0.3deg); }
-            100% { clip: rect(92px, 9999px, 12px, 0); transform: skew(0.5deg); }
-        }
-
-        .scanlines {
-            position: fixed;
-            top: 0; left: 0; width: 100vw; height: 100vh;
-            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2));
-            background-size: 100% 4px;
-            z-index: 9999;
-            pointer-events: none;
-            opacity: 0.6;
-        }
-
-        .shake {
-            animation: shake 0.5s infinite;
-        }
-
-        @keyframes shake {
-            0% { transform: translate(1px, 1px) rotate(0deg); }
-            10% { transform: translate(-1px, -2px) rotate(-1deg); }
-            20% { transform: translate(-3px, 0px) rotate(1deg); }
-            30% { transform: translate(3px, 2px) rotate(0deg); }
-            40% { transform: translate(1px, -1px) rotate(1deg); }
-            50% { transform: translate(-1px, 2px) rotate(-1deg); }
-            60% { transform: translate(-3px, 1px) rotate(0deg); }
-            70% { transform: translate(3px, 1px) rotate(-1deg); }
-            80% { transform: translate(-1px, -1px) rotate(1deg); }
-            90% { transform: translate(1px, 2px) rotate(0deg); }
-            100% { transform: translate(1px, -2px) rotate(-1deg); }
-        }
-
-        .crt-flicker {
-            animation: flicker 0.15s infinite;
-        }
-
-        @keyframes flicker {
-            0% { opacity: 0.9; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
-        }
+        /* Palette qui tape */
+        .bg-brutal-yellow { background-color: #fbff00; }
+        .bg-brutal-blue { background-color: #0044ff; color: white; }
+        .bg-brutal-pink { background-color: #ff00ea; color: white; }
     </style>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen relative">
-    
-    <div class="scanlines"></div>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 selection:bg-black selection:text-white">
 
-    <main class="relative z-10 flex flex-col items-center text-center max-w-3xl w-full px-4 mix-blend-difference">
-        <h1 class="text-6xl md:text-8xl font-black tracking-tighter uppercase glitch crt-flicker" data-text="RAPPELSMS">
-            RAPPELSMS
-        </h1>
+    <div class="mb-8 md:mb-12 brutal-border bg-white px-6 py-3 brutal-shadow transform -rotate-2">
+        <h1 class="text-3xl md:text-5xl tracking-tighter">Rappel<span class="text-[#0044ff]">SMS</span></h1>
+    </div>
+
+    <main class="w-full max-w-4xl bg-white brutal-border brutal-shadow p-6 md:p-12 flex flex-col items-center text-center">
         
-        <p class="mt-8 text-2xl md:text-4xl font-bold uppercase tracking-widest text-red-500 glitch" data-text="SYSTÈME EN COURS DE MUTATION">
-            SYSTÈME EN COURS DE MUTATION
+        <h2 class="text-4xl md:text-6xl leading-tight mb-6">
+            La communication, <br>
+            <span class="bg-brutal-yellow px-4 border-y-4 border-black">sans bullshit.</span>
+        </h2>
+        
+        <p class="text-lg md:text-xl font-bold mb-10 max-w-2xl">
+            UNE NOUVELLE ÈRE SE PRÉPARE. LE DÉPLOIEMENT EST PRÉVU POUR <span class="bg-black text-white px-2">JUIN 2026</span>.
         </p>
-        
-        <p class="mt-6 max-w-xl text-lg text-green-400 font-bold border border-green-400 p-4 bg-green-900/20 shadow-[0_0_15px_#4ade80] glitch" data-text="CONNEXION NEURONALE PRÉVUE POUR JUIN 2026. PRÉPAREZ VOS SYNAPSES.">
-            CONNEXION NEURONALE PRÉVUE POUR JUIN 2026. PRÉPAREZ VOS SYNAPSES.
-        </p>
-        
-        <div id="countdown" class="mt-12 grid grid-cols-4 gap-4 text-center w-full max-w-2xl transform hover:scale-110 transition-transform duration-75">
-            <div class="border-2 border-[#00fff9] p-4 shadow-[4px_4px_0px_#ff00c1]">
-                <div id="days" class="text-4xl md:text-6xl font-black text-[#00fff9]">00</div>
-                <div class="text-sm uppercase tracking-widest text-[#ff00c1] font-bold">ROTATIONS</div>
+
+        <div id="countdown" class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 w-full mb-12">
+            <div class="brutal-border bg-brutal-pink p-4 flex flex-col items-center justify-center brutal-shadow transform rotate-1">
+                <span id="days" class="text-5xl md:text-6xl font-black">00</span>
+                <span class="text-sm font-bold uppercase tracking-widest mt-2 text-black">Jours</span>
             </div>
-            <div class="border-2 border-[#ff00c1] p-4 shadow-[-4px_4px_0px_#00fff9]">
-                <div id="hours" class="text-4xl md:text-6xl font-black text-[#ff00c1]">00</div>
-                <div class="text-sm uppercase tracking-widest text-[#00fff9] font-bold">CYCLES</div>
+            <div class="brutal-border bg-white p-4 flex flex-col items-center justify-center brutal-shadow transform -rotate-1">
+                <span id="hours" class="text-5xl md:text-6xl font-black">00</span>
+                <span class="text-sm font-bold uppercase tracking-widest mt-2">Heures</span>
             </div>
-            <div class="border-2 border-yellow-400 p-4 shadow-[4px_-4px_0px_#ff00c1] shake">
-                <div id="minutes" class="text-4xl md:text-6xl font-black text-yellow-400">00</div>
-                <div class="text-sm uppercase tracking-widest text-red-500 font-bold">PULSATIONS</div>
+            <div class="brutal-border bg-white p-4 flex flex-col items-center justify-center brutal-shadow transform rotate-1">
+                <span id="minutes" class="text-5xl md:text-6xl font-black">00</span>
+                <span class="text-sm font-bold uppercase tracking-widest mt-2">Minutes</span>
             </div>
-            <div class="border-2 border-red-500 p-4 shadow-[-4px_-4px_0px_yellow]">
-                <div id="seconds" class="text-4xl md:text-6xl font-black text-red-500 crt-flicker">00</div>
-                <div class="text-sm uppercase tracking-widest text-yellow-400 font-bold">MICRO-CYCLES</div>
+            <div class="brutal-border bg-brutal-yellow p-4 flex flex-col items-center justify-center brutal-shadow transform -rotate-1">
+                <span id="seconds" class="text-5xl md:text-6xl font-black">00</span>
+                <span class="text-sm font-bold uppercase tracking-widest mt-2">Secondes</span>
             </div>
         </div>
 
-        <div class="mt-16 w-full max-w-lg">
-            <form id="notify-form" class="flex flex-col gap-4 relative">
-                <input type="email" id="email-input" required placeholder="INJECTEZ VOTRE ADN (EMAIL)" class="w-full px-6 py-4 bg-black border-4 border-white text-white font-bold tracking-widest focus:border-[#ff00c1] focus:outline-none placeholder-gray-600 uppercase text-center glitch-hover">
-                <button type="submit" class="bg-white text-black border-4 border-black font-black text-xl px-6 py-4 uppercase tracking-[0.3em] hover:bg-[#00fff9] hover:text-black transition-all duration-75 shadow-[8px_8px_0px_#ff00c1] active:translate-x-2 active:translate-y-2 active:shadow-none">
-                    ASSIMILATION
+        <div class="w-full max-w-2xl">
+            <form id="notify-form" class="flex flex-col sm:flex-row gap-4">
+                <input type="email" id="email-input" required placeholder="TON EMAIL ICI" 
+                    class="flex-grow brutal-border px-6 py-4 bg-[#fdf5e6] font-bold text-lg placeholder-gray-500 focus:outline-none focus:bg-white focus:ring-0 transition-colors text-center sm:text-left">
+                <button type="submit" 
+                    class="brutal-border bg-brutal-blue font-black text-xl px-10 py-4 brutal-shadow uppercase whitespace-nowrap">
+                    ME PRÉVENIR
                 </button>
             </form>
-            <div id="form-feedback" class="mt-4 text-xl font-black uppercase tracking-widest h-8 text-[#00fff9] glitch" data-text=""></div>
+            <div id="form-feedback" class="mt-4 font-bold uppercase tracking-widest h-6 text-[#0044ff]"></div>
         </div>
+        
     </main>
 
+    <footer class="mt-12 font-bold uppercase text-sm tracking-widest">
+        © 2026 RappelSMS. <span class="bg-black text-white px-1">STAY TUNED.</span>
+    </footer>
+
     <script>
-        // LE CERVEAU SOUS ACIDE DU COMPTE À REBOURS
+        // LOGIQUE DU COMPTE À REBOURS (Clean, sans erreur)
         (function() {
-            // NOUVELLE CIBLE : 1er JUIN 2026 (Le jour où la matrice s'effondre)
+            // Cible : 1er Juin 2026
             const targetDate = new Date("Jun 1, 2026 00:00:00").getTime();
 
             const daysEl = document.getElementById("days");
@@ -185,57 +115,32 @@
                 const now = new Date().getTime();
                 const distance = targetDate - now;
 
+                if (distance < 0) return; // Si c'est lancé, on arrête le script
+
                 const days = Math.floor(distance / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                // Parfois les chiffres bégayent à cause de la drogue digitale
-                daysEl.textContent = Math.random() > 0.95 ? "ERR" : days.toString().padStart(2, '0');
+                daysEl.textContent = days.toString().padStart(2, '0');
                 hoursEl.textContent = hours.toString().padStart(2, '0');
                 minutesEl.textContent = minutes.toString().padStart(2, '0');
                 secondsEl.textContent = seconds.toString().padStart(2, '0');
-
-                // Effet de glitch aléatoire sur le body
-                if(Math.random() > 0.98) {
-                    document.body.style.transform = `skew(${Math.random() * 10 - 5}deg) scale(${1 + Math.random() * 0.1})`;
-                    setTimeout(() => document.body.style.transform = 'none', 50);
-                }
             }, 1000);
         })();
 
-        // SOUMISSION DU FORMULAIRE DANS LE NÉANT
+        // LOGIQUE DU FORMULAIRE
         document.getElementById("notify-form").addEventListener("submit", function(e) {
             e.preventDefault();
             const feedbackEl = document.getElementById("form-feedback");
-            feedbackEl.textContent = "DONNÉES ASSIMILÉES. LE SYSTÈME VOUS VOIT.";
-            feedbackEl.setAttribute("data-text", "DONNÉES ASSIMILÉES. LE SYSTÈME VOUS VOIT.");
-            
-            // Gros flash visuel
-            document.body.style.backgroundColor = "#ff00c1";
-            setTimeout(() => document.body.style.backgroundColor = "#050505", 100);
+            feedbackEl.textContent = "✓ EMAIL ENREGISTRÉ DANS LA BASE.";
             
             document.getElementById("email-input").value = "";
+            
+            setTimeout(() => {
+                feedbackEl.textContent = "";
+            }, 4000);
         });
-
-        // INJECTION DE TEXTE ALÉATOIRE DANS LE DOM
-        setInterval(() => {
-            if (Math.random() > 0.8) {
-                const garbage = document.createElement('div');
-                garbage.style.position = 'absolute';
-                garbage.style.color = Math.random() > 0.5 ? '#ff00c1' : '#00fff9';
-                garbage.style.left = Math.random() * 100 + 'vw';
-                garbage.style.top = Math.random() * 100 + 'vh';
-                garbage.style.fontSize = Math.random() * 40 + 'px';
-                garbage.style.fontWeight = 'black';
-                garbage.style.zIndex = -1;
-                garbage.style.opacity = 0.3;
-                garbage.textContent = Math.random().toString(36).substring(2, 8).toUpperCase();
-                document.body.appendChild(garbage);
-                
-                setTimeout(() => garbage.remove(), 200);
-            }
-        }, 150);
     </script>
 </body>
 </html>
